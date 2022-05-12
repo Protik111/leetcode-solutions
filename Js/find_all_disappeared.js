@@ -2,8 +2,9 @@ const findDisappearedNumbers = function(nums) {
     const missingNums = [];
     const num = new Set();
     for(let i of nums){
-        if(!num.has(i)) num.add(i);
+        if(!num.has(i)) num.add(i); //getting an unique set from nums array in num variable
     }
+    console.log(num);
     let n = 1;
     while(n <= nums.length){
         if(!num.has(n)) missingNums.push(n);

@@ -16,4 +16,4 @@ const isValid = (paren) => {
     return stack.length === 0;
 }
 
-console.log(isValid('(]'));
+console.log(isValid('{'));
